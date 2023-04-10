@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"module": "CommonJS",
+		"target": "ES2020",
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"noImplicitAny": true,
+		"strict": false,
+		"incremental": true,
+		"alwaysStrict": true,
+		"preserveConstEnums": true,
+		"strictFunctionTypes": true
+	},
+	"include": ["./src/**/*"],
+	"exclude": ["./src/**/*.test.js"]
+}
