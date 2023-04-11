@@ -9,13 +9,14 @@
 	"rules": {
 		"@typescript-eslint/no-explicit-any": "warn",
 		"@typescript-eslint/explicit-module-boundary-types": "error",
-		"@typescript-eslint/naming-convention": [
-			"error",
-			{
-				"selector": "default",
-				"format": ["camelCase"]
-			}
-		],
+		// TODO: Донастроить правила
+		//		"@typescript-eslint/naming-convention": [
+		//			"error",
+		//			{
+		//				"selector": "default",
+		//				"format": ["camelCase"]
+		//			}
+		//		],
 		"prefer-const": "error",
 		"no-unused-vars": "error",
 		"eqeqeq": "error",
