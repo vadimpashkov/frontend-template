@@ -8,12 +8,13 @@
 		"webpack:prod": "cross-env TS_NODE_PROJECT=\"./tools/webpack/tsconfig.json\" webpack -c ./tools/webpack/webpack.config.ts --node-env=production",
 		"predev": "npm run webpack:dev",
 		"dev": "webpack serve -c ./tools/webpack/webpack.config.ts --node-env=development",
-		"jest": "jest",
+		"test:jest": "jest",
 		"stylelint": "stylelint src/**/*.css",
 		"prettier:write": "prettier --write .",
 		"prettier:check": "prettier --check .",
 		"eslint": "eslint",
-		"eslint:fix": "eslint --fix --color"
+		"eslint:fix": "eslint --fix --color",
+		"husky:prepare": "husky install"
 	},
 	"author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
 	"license": "MIT",
@@ -22,24 +23,16 @@
 		"> 1%",
 		"not dead"
 	],
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-		}
-	},
 	"lint-staged": {
 		"**/*": [
 			"prettier --write --ignore-unknown"
 		],
 		"*.css": [
-			"npm run stylelint",
-			"git add"
+			"stylelint --fix"
 		],
 		"*.ts": [
-			"npm run jest",
-			"npm run eslint:fix",
-			"git add"
+			"npm run test:jest",
+			"npm run eslint:fix"
 		]
 	},
 	"devDependencies": {
