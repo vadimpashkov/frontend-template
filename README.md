@@ -7,7 +7,7 @@ Template for frontend project in typescript
 - [x] Git Ignore
 - [x] CommitLint
 - [x] EditorConfig
-- [x] Webpack
+- [x] Vite
 - [x] Prettier
 - [x] Stylelint
 - [x] ESlint
