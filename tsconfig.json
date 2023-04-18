@@ -11,6 +11,5 @@
 		"preserveConstEnums": true,
 		"strictFunctionTypes": true
 	},
-	"include": ["./src/**/*"],
-	"exclude": ["./src/**/*.test.js"]
+	"include": ["src"]
 }
