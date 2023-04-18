@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-npm run prettier:write
-npm run eslint:fix
-npm run jest
-npx lint-staged

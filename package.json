@@ -1,63 +1,17 @@
 {
-	"name": "frontend-template",
-	"version": "0.1.0",
-	"description": "Template for frontend project in typescript",
-	"private": true,
-	"scripts": {
-		"webpack:dev": "cross-env TS_NODE_PROJECT=\"./tools/webpack/tsconfig.json\" webpack -c ./tools/webpack/webpack.config.ts --node-env=development",
-		"webpack:prod": "cross-env TS_NODE_PROJECT=\"./tools/webpack/tsconfig.json\" webpack -c ./tools/webpack/webpack.config.ts --node-env=production",
-		"predev": "npm run webpack:dev",
-		"dev": "webpack serve -c ./tools/webpack/webpack.config.ts --node-env=development",
-		"jest": "jest",
-		"stylelint": "stylelint src/**/*.css",
-		"prettier:write": "prettier --write --ignore-unknown",
-		"eslint": "eslint",
-		"eslint:fix": "eslint --fix --color",
-		"prepare": "husky install"
-	},
-	"author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
-	"license": "MIT",
-	"browserslist": [
-		"last 1 version",
-		"> 1%",
-		"not dead"
-	],
-	"lint-staged": {
-		"*.css": [
-			"stylelint --fix"
-		]
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^17.5.1",
-		"@commitlint/config-conventional": "^17.4.4",
-		"@types/dotenv": "^8.2.0",
-		"@types/jest": "^29.5.0",
-		"@types/webpack": "^5.28.0",
-		"@typescript-eslint/eslint-plugin": "^5.27.0",
-		"@typescript-eslint/parser": "^5.27.0",
-		"browserslist": "^4.21.5",
-		"cross-env": "^7.0.3",
-		"css-loader": "^6.7.3",
-		"eslint": "^8.16.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.0.0",
-		"html-webpack-plugin": "^5.5.0",
-		"husky": "^8.0.0",
-		"jest": "^29.5.0",
-		"lint-staged": "^13.2.1",
-		"mini-css-extract-plugin": "^2.7.5",
-		"prettier": "^2.8.7",
-		"style-loader": "^3.3.2",
-		"stylelint": "^14.8.5",
-		"stylelint-config-prettier": "^9.0.3",
-		"stylelint-config-standard": "^25.0.0",
-		"stylelint-prettier": "^2.0.0",
-		"ts-jest": "^29.1.0",
-		"ts-loader": "^9.4.2",
-		"ts-node": "^10.9.1",
-		"typescript": "^5.0.2",
-		"webpack": "^5.76.3",
-		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.13.1"
-	}
+  "name": "frontend-template",
+  "version": "0.1.0",
+  "description": "Template for frontend project in typescript",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "author": "Vadim Pashkov <vadimpashkov.job@gmail.com> (https://github.com/vadimpashkov)",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.1"
+  }
 }
